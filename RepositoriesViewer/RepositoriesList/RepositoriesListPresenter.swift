@@ -15,29 +15,50 @@ protocol RepositoriesListPresenterProtocol: RxPresenter {
 }
 
 final class RepositoriesListPresenter {
-    
+    var debounceTime: RxTimeInterval = .seconds(1)
     var router: Router<RepositoriesListViewController>
-    private let interactor: RepositoriesListInteractor
+    private let interactor: RepositoriesListInteractorProtocol
+    
+    private let repositories = BehaviorRelay<[RepositoryListViewProtocol]>(value: [])
     
     private let disposeBag = DisposeBag()
 
-    init(_ router: Router<RepositoriesListViewController>, _ interactor: RepositoriesListInteractor) {
+    init(_ router: Router<RepositoriesListViewController>, _ interactor: RepositoriesListInteractorProtocol) {
         self.router = router
         self.interactor = interactor
     }
 }
 
 extension RepositoriesListPresenter: RepositoriesListPresenterProtocol {
-    struct Input {}
+    struct Input {
+        let searchText: Observable<String>
+    }
 
-    struct Output {}
+    struct Output {
+        let repositories: Driver<[RepositoryListViewProtocol]>
+    }
 
     func bindInput(_ input: RepositoriesListPresenter.Input) {
-
+        input.searchText
+            .debounce(debounceTime, scheduler: MainScheduler.instance)
+            .flatMapLatest { [unowned self] in
+                self.interactor.searchRepositories(for: $0)
+                    .asObservable()
+                    .do(onError: { error in
+                        print(error.localizedDescription)
+                    })
+                    .catchAndReturn([])
+            }
+            .map {
+                $0.map {
+                    RepositoryListView(title: $0.title , link: $0.link.absoluteString)
+                }
+            }
+            .bind(to: repositories)
+            .disposed(by: disposeBag)
     }
 
     func configureOutput(_ input: RepositoriesListPresenter.Input) -> RepositoriesListPresenter.Output {
-
-        return Output()
+        return Output(repositories: repositories.asDriver())
     }
 }

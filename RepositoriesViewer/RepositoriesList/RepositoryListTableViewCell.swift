@@ -24,7 +24,7 @@ class RepositoryListTableViewCell: UITableViewCell {
 
     let linkLabel: UILabel = {
         let label = UILabel()
-
+        label.numberOfLines = 0
         return label
     }()
 

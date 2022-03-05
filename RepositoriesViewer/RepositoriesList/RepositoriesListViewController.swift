@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import RxSwift
 
 final class RepositoriesListViewController: UIViewController {
     private let _view: RepositoriesListView
     private var presenter: RepositoriesListPresenter
+    
+    private let disposeBag = DisposeBag()
     
     init(_ presenter: RepositoriesListPresenter) {
         _view = RepositoriesListView()
@@ -33,7 +36,14 @@ final class RepositoriesListViewController: UIViewController {
 
 extension RepositoriesListViewController {
     private func setupBindings() {
-        let input = RepositoriesListPresenter.Input()
+        let input = RepositoriesListPresenter.Input(searchText: _view.searchBar.rx.text.orEmpty.asObservable())
         let output = presenter.buildOutput(with: input)
+        
+        output.repositories
+            .asObservable()
+            .bind(onNext: { [weak _view] in
+                _view?.list = $0
+            })
+            .disposed(by: disposeBag)
     }
 }

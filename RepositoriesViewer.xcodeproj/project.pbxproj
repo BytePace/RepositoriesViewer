@@ -45,6 +45,10 @@
 		8407629327D31ADB0075CD5F /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407627D27D31ADB0075CD5F /* PushTransition.swift */; };
 		8407629427D31ADB0075CD5F /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407627E27D31ADB0075CD5F /* Transition.swift */; };
 		8407629527D31ADB0075CD5F /* RxPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407628027D31ADB0075CD5F /* RxPresenter.swift */; };
+		8407629727D31B8B0075CD5F /* RepositoriesListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407629627D31B8B0075CD5F /* RepositoriesListPresenterTests.swift */; };
+		8407629927D3283E0075CD5F /* RepositoriesListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407629827D3283E0075CD5F /* RepositoriesListViewControllerTests.swift */; };
+		8407629B27D32AAC0075CD5F /* RepositoriesListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407629A27D32AAC0075CD5F /* RepositoriesListInteractorTests.swift */; };
+		8407629D27D336970075CD5F /* RepositoryServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407629C27D336970075CD5F /* RepositoryServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +100,10 @@
 		8407627D27D31ADB0075CD5F /* PushTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
 		8407627E27D31ADB0075CD5F /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		8407628027D31ADB0075CD5F /* RxPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxPresenter.swift; sourceTree = "<group>"; };
+		8407629627D31B8B0075CD5F /* RepositoriesListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListPresenterTests.swift; sourceTree = "<group>"; };
+		8407629827D3283E0075CD5F /* RepositoriesListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListViewControllerTests.swift; sourceTree = "<group>"; };
+		8407629A27D32AAC0075CD5F /* RepositoriesListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListInteractorTests.swift; sourceTree = "<group>"; };
+		8407629C27D336970075CD5F /* RepositoryServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +164,10 @@
 			children = (
 				8407624227D30B7F0075CD5F /* RepositoriesViewTests.swift */,
 				8407624927D311A40075CD5F /* RepositoryListTableViewCellTests.swift */,
+				8407629627D31B8B0075CD5F /* RepositoriesListPresenterTests.swift */,
+				8407629827D3283E0075CD5F /* RepositoriesListViewControllerTests.swift */,
+				8407629A27D32AAC0075CD5F /* RepositoriesListInteractorTests.swift */,
+				8407629C27D336970075CD5F /* RepositoryServiceTests.swift */,
 				8407624727D30D4E0075CD5F /* TestExtension.swift */,
 				8407624127D30B7F0075CD5F /* RepositoriesViewerTests-Bridging-Header.h */,
 			);
@@ -407,8 +419,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8407629927D3283E0075CD5F /* RepositoriesListViewControllerTests.swift in Sources */,
+				8407629D27D336970075CD5F /* RepositoryServiceTests.swift in Sources */,
 				8407624A27D311A40075CD5F /* RepositoryListTableViewCellTests.swift in Sources */,
+				8407629B27D32AAC0075CD5F /* RepositoriesListInteractorTests.swift in Sources */,
 				8407624327D30B7F0075CD5F /* RepositoriesViewTests.swift in Sources */,
+				8407629727D31B8B0075CD5F /* RepositoriesListPresenterTests.swift in Sources */,
 				8407624827D30D4E0075CD5F /* TestExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

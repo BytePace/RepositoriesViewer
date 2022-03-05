@@ -49,6 +49,23 @@ class RepositoryListTableViewCellTests: XCTestCase {
         XCTAssertEqual(sut.linkLabel.text, vm.link)
     }
 
+    func test_cellWithLinkInTwoLinesHeight_biggerThanHeightOfCellWithOneLineLink() {
+        let sut = makeSUT()
+        let vm = RepositoryListView(title: "Repo title", link: "Repo URL\nRepo name2")
+        sut.viewModel = vm
+        
+        let cell2 = makeSUT()
+        let vm2 = RepositoryListView(title: "Repo title", link: "Repo URL")
+        cell2.viewModel = vm2
+        
+        let h1 = sut.sizeThatFits(.init(width: sut.frame.width, height: .greatestFiniteMagnitude)).height
+        
+        let h2 = cell2.sizeThatFits(.init(width: sut.frame.width, height: .greatestFiniteMagnitude)).height
+        
+        XCTAssert(h1 > h2)
+
+    }
+    
     private func makeSUT() -> RepositoryListTableViewCell {
         let cell = RepositoryListTableViewCell()
         cell.titleLabel.text = "Repo name"
