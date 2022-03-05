@@ -3,10 +3,11 @@
 //  RepositoriesViewer
 //
 //  Created by Admin on 05.03.2022.
+//  Copyright © 2022 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-import Foundation
 import UIKit
+import RxSwift
 import PinLayout
 
 protocol RepositoryListViewProtocol {
@@ -19,7 +20,7 @@ struct RepositoryListView: RepositoryListViewProtocol {
     var link: String
 }
 
-class RepositoriesView: UIView {
+class RepositoriesListView: UIView {
     let searchBar = UISearchBar()
     let tableView: UITableView = {
         let view = UITableView(frame: .zero, style: .grouped)
@@ -68,7 +69,7 @@ class RepositoriesView: UIView {
     }
 }
 
-extension RepositoriesView: UITableViewDataSource {
+extension RepositoriesListView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         list.count
     }

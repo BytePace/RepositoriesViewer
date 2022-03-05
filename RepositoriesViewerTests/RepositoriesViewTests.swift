@@ -74,8 +74,8 @@ class RepositoriesViewTests: XCTestCase {
         XCTAssertEqual(cell.linkLabel.text, "rep url")
     }
 
-    private func makeSUT() -> RepositoriesView {
-        let view = RepositoriesView()
+    private func makeSUT() -> RepositoriesListView {
+        let view = RepositoriesListView()
         view.renderOnWindow()
         return view
     }

@@ -14,8 +14,37 @@
 		8407624627D30CF20075CD5F /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8407624527D30CF20075CD5F /* PinLayout */; };
 		8407624827D30D4E0075CD5F /* TestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407624727D30D4E0075CD5F /* TestExtension.swift */; };
 		8407624A27D311A40075CD5F /* RepositoryListTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407624927D311A40075CD5F /* RepositoryListTableViewCellTests.swift */; };
-		8407624D27D316550075CD5F /* RepositoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407624C27D316550075CD5F /* RepositoriesListView.swift */; };
 		8407624F27D3167E0075CD5F /* RepositoryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407624E27D3167E0075CD5F /* RepositoryListTableViewCell.swift */; };
+		8407625727D31A220075CD5F /* RepositoriesListFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407625127D31A220075CD5F /* RepositoriesListFabric.swift */; };
+		8407625827D31A220075CD5F /* RepositoriesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407625227D31A220075CD5F /* RepositoriesListPresenter.swift */; };
+		8407625927D31A220075CD5F /* RepositoriesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407625327D31A220075CD5F /* RepositoriesListRouter.swift */; };
+		8407625A27D31A220075CD5F /* RepositoriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407625427D31A220075CD5F /* RepositoriesListViewController.swift */; };
+		8407625B27D31A220075CD5F /* RepositoriesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407625527D31A220075CD5F /* RepositoriesListInteractor.swift */; };
+		8407625C27D31A220075CD5F /* RepositoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407625627D31A220075CD5F /* RepositoriesListView.swift */; };
+		8407625F27D31A8E0075CD5F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 8407625E27D31A8E0075CD5F /* RxCocoa */; };
+		8407626127D31A8E0075CD5F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 8407626027D31A8E0075CD5F /* RxRelay */; };
+		8407626327D31A8E0075CD5F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8407626227D31A8E0075CD5F /* RxSwift */; };
+		8407628127D31ADB0075CD5F /* ClassIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407626727D31ADB0075CD5F /* ClassIdentifiable.swift */; };
+		8407628227D31ADB0075CD5F /* UICollectionView+ClassIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407626827D31ADB0075CD5F /* UICollectionView+ClassIdentifiable.swift */; };
+		8407628327D31ADB0075CD5F /* UITableView+ClassIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407626927D31ADB0075CD5F /* UITableView+ClassIdentifiable.swift */; };
+		8407628427D31ADB0075CD5F /* ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407626B27D31ADB0075CD5F /* ErrorDescription.swift */; };
+		8407628527D31ADB0075CD5F /* UIViewController+ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407626C27D31ADB0075CD5F /* UIViewController+ErrorDescription.swift */; };
+		8407628627D31ADB0075CD5F /* NSMutableAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407626E27D31ADB0075CD5F /* NSMutableAttributedString+Extensions.swift */; };
+		8407628727D31ADB0075CD5F /* RxRelay+ObserverType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407626F27D31ADB0075CD5F /* RxRelay+ObserverType.swift */; };
+		8407628827D31ADB0075CD5F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407627027D31ADB0075CD5F /* String+Extensions.swift */; };
+		8407628927D31ADB0075CD5F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407627127D31ADB0075CD5F /* Toast.swift */; };
+		8407628A27D31ADB0075CD5F /* UIAlertController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407627227D31ADB0075CD5F /* UIAlertController+Rx.swift */; };
+		8407628B27D31ADB0075CD5F /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407627327D31ADB0075CD5F /* UIFont+Extensions.swift */; };
+		8407628C27D31ADB0075CD5F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407627427D31ADB0075CD5F /* UIView+Extensions.swift */; };
+		8407628D27D31ADB0075CD5F /* VIewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407627527D31ADB0075CD5F /* VIewController+Rx.swift */; };
+		8407628E27D31ADB0075CD5F /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407627727D31ADB0075CD5F /* Animator.swift */; };
+		8407628F27D31ADB0075CD5F /* BackwardsPassableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407627827D31ADB0075CD5F /* BackwardsPassableRouter.swift */; };
+		8407629027D31ADB0075CD5F /* FadeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407627927D31ADB0075CD5F /* FadeAnimator.swift */; };
+		8407629127D31ADB0075CD5F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407627A27D31ADB0075CD5F /* Router.swift */; };
+		8407629227D31ADB0075CD5F /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407627C27D31ADB0075CD5F /* ModalTransition.swift */; };
+		8407629327D31ADB0075CD5F /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407627D27D31ADB0075CD5F /* PushTransition.swift */; };
+		8407629427D31ADB0075CD5F /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407627E27D31ADB0075CD5F /* Transition.swift */; };
+		8407629527D31ADB0075CD5F /* RxPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407628027D31ADB0075CD5F /* RxPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +68,34 @@
 		8407624227D30B7F0075CD5F /* RepositoriesViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewTests.swift; sourceTree = "<group>"; };
 		8407624727D30D4E0075CD5F /* TestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtension.swift; sourceTree = "<group>"; };
 		8407624927D311A40075CD5F /* RepositoryListTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListTableViewCellTests.swift; sourceTree = "<group>"; };
-		8407624C27D316550075CD5F /* RepositoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListView.swift; sourceTree = "<group>"; };
 		8407624E27D3167E0075CD5F /* RepositoryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListTableViewCell.swift; sourceTree = "<group>"; };
+		8407625127D31A220075CD5F /* RepositoriesListFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListFabric.swift; sourceTree = "<group>"; };
+		8407625227D31A220075CD5F /* RepositoriesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListPresenter.swift; sourceTree = "<group>"; };
+		8407625327D31A220075CD5F /* RepositoriesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListRouter.swift; sourceTree = "<group>"; };
+		8407625427D31A220075CD5F /* RepositoriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListViewController.swift; sourceTree = "<group>"; };
+		8407625527D31A220075CD5F /* RepositoriesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListInteractor.swift; sourceTree = "<group>"; };
+		8407625627D31A220075CD5F /* RepositoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListView.swift; sourceTree = "<group>"; };
+		8407626727D31ADB0075CD5F /* ClassIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassIdentifiable.swift; sourceTree = "<group>"; };
+		8407626827D31ADB0075CD5F /* UICollectionView+ClassIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ClassIdentifiable.swift"; sourceTree = "<group>"; };
+		8407626927D31ADB0075CD5F /* UITableView+ClassIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ClassIdentifiable.swift"; sourceTree = "<group>"; };
+		8407626B27D31ADB0075CD5F /* ErrorDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorDescription.swift; sourceTree = "<group>"; };
+		8407626C27D31ADB0075CD5F /* UIViewController+ErrorDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ErrorDescription.swift"; sourceTree = "<group>"; };
+		8407626E27D31ADB0075CD5F /* NSMutableAttributedString+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extensions.swift"; sourceTree = "<group>"; };
+		8407626F27D31ADB0075CD5F /* RxRelay+ObserverType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RxRelay+ObserverType.swift"; sourceTree = "<group>"; };
+		8407627027D31ADB0075CD5F /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		8407627127D31ADB0075CD5F /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		8407627227D31ADB0075CD5F /* UIAlertController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Rx.swift"; sourceTree = "<group>"; };
+		8407627327D31ADB0075CD5F /* UIFont+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		8407627427D31ADB0075CD5F /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		8407627527D31ADB0075CD5F /* VIewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VIewController+Rx.swift"; sourceTree = "<group>"; };
+		8407627727D31ADB0075CD5F /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		8407627827D31ADB0075CD5F /* BackwardsPassableRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackwardsPassableRouter.swift; sourceTree = "<group>"; };
+		8407627927D31ADB0075CD5F /* FadeAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeAnimator.swift; sourceTree = "<group>"; };
+		8407627A27D31ADB0075CD5F /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		8407627C27D31ADB0075CD5F /* ModalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
+		8407627D27D31ADB0075CD5F /* PushTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		8407627E27D31ADB0075CD5F /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		8407628027D31ADB0075CD5F /* RxPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +103,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8407626127D31A8E0075CD5F /* RxRelay in Frameworks */,
+				8407625F27D31A8E0075CD5F /* RxCocoa in Frameworks */,
+				8407626327D31A8E0075CD5F /* RxSwift in Frameworks */,
 				8407624627D30CF20075CD5F /* PinLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +141,7 @@
 		8407621027D30A300075CD5F /* RepositoriesViewer */ = {
 			isa = PBXGroup;
 			children = (
+				8407626427D31ADB0075CD5F /* BytepaceSwiftUtils */,
 				8407621127D30A300075CD5F /* AppDelegate.swift */,
 				8407624B27D316340075CD5F /* RepositoriesList */,
 				8407621A27D30A310075CD5F /* Assets.xcassets */,
@@ -106,10 +165,99 @@
 		8407624B27D316340075CD5F /* RepositoriesList */ = {
 			isa = PBXGroup;
 			children = (
-				8407624C27D316550075CD5F /* RepositoriesListView.swift */,
+				8407625127D31A220075CD5F /* RepositoriesListFabric.swift */,
+				8407625227D31A220075CD5F /* RepositoriesListPresenter.swift */,
+				8407625327D31A220075CD5F /* RepositoriesListRouter.swift */,
+				8407625427D31A220075CD5F /* RepositoriesListViewController.swift */,
+				8407625527D31A220075CD5F /* RepositoriesListInteractor.swift */,
+				8407625627D31A220075CD5F /* RepositoriesListView.swift */,
 				8407624E27D3167E0075CD5F /* RepositoryListTableViewCell.swift */,
 			);
 			path = RepositoriesList;
+			sourceTree = "<group>";
+		};
+		8407626427D31ADB0075CD5F /* BytepaceSwiftUtils */ = {
+			isa = PBXGroup;
+			children = (
+				8407626527D31ADB0075CD5F /* Classes */,
+			);
+			path = BytepaceSwiftUtils;
+			sourceTree = "<group>";
+		};
+		8407626527D31ADB0075CD5F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8407626627D31ADB0075CD5F /* ClassIdentifiable */,
+				8407626A27D31ADB0075CD5F /* ErrorDescription */,
+				8407626D27D31ADB0075CD5F /* Extensions */,
+				8407627627D31ADB0075CD5F /* Routing */,
+				8407627F27D31ADB0075CD5F /* RxPresenter */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8407626627D31ADB0075CD5F /* ClassIdentifiable */ = {
+			isa = PBXGroup;
+			children = (
+				8407626727D31ADB0075CD5F /* ClassIdentifiable.swift */,
+				8407626827D31ADB0075CD5F /* UICollectionView+ClassIdentifiable.swift */,
+				8407626927D31ADB0075CD5F /* UITableView+ClassIdentifiable.swift */,
+			);
+			path = ClassIdentifiable;
+			sourceTree = "<group>";
+		};
+		8407626A27D31ADB0075CD5F /* ErrorDescription */ = {
+			isa = PBXGroup;
+			children = (
+				8407626B27D31ADB0075CD5F /* ErrorDescription.swift */,
+				8407626C27D31ADB0075CD5F /* UIViewController+ErrorDescription.swift */,
+			);
+			path = ErrorDescription;
+			sourceTree = "<group>";
+		};
+		8407626D27D31ADB0075CD5F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8407626E27D31ADB0075CD5F /* NSMutableAttributedString+Extensions.swift */,
+				8407626F27D31ADB0075CD5F /* RxRelay+ObserverType.swift */,
+				8407627027D31ADB0075CD5F /* String+Extensions.swift */,
+				8407627127D31ADB0075CD5F /* Toast.swift */,
+				8407627227D31ADB0075CD5F /* UIAlertController+Rx.swift */,
+				8407627327D31ADB0075CD5F /* UIFont+Extensions.swift */,
+				8407627427D31ADB0075CD5F /* UIView+Extensions.swift */,
+				8407627527D31ADB0075CD5F /* VIewController+Rx.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8407627627D31ADB0075CD5F /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				8407627727D31ADB0075CD5F /* Animator.swift */,
+				8407627827D31ADB0075CD5F /* BackwardsPassableRouter.swift */,
+				8407627927D31ADB0075CD5F /* FadeAnimator.swift */,
+				8407627A27D31ADB0075CD5F /* Router.swift */,
+				8407627B27D31ADB0075CD5F /* Transitions */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		8407627B27D31ADB0075CD5F /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				8407627C27D31ADB0075CD5F /* ModalTransition.swift */,
+				8407627D27D31ADB0075CD5F /* PushTransition.swift */,
+				8407627E27D31ADB0075CD5F /* Transition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		8407627F27D31ADB0075CD5F /* RxPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				8407628027D31ADB0075CD5F /* RxPresenter.swift */,
+			);
+			path = RxPresenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +278,9 @@
 			name = RepositoriesViewer;
 			packageProductDependencies = (
 				8407624527D30CF20075CD5F /* PinLayout */,
+				8407625E27D31A8E0075CD5F /* RxCocoa */,
+				8407626027D31A8E0075CD5F /* RxRelay */,
+				8407626227D31A8E0075CD5F /* RxSwift */,
 			);
 			productName = RepositoriesViewer;
 			productReference = 8407620E27D30A300075CD5F /* RepositoriesViewer.app */;
@@ -184,6 +335,7 @@
 			mainGroup = 8407620527D30A300075CD5F;
 			packageReferences = (
 				8407624427D30CF20075CD5F /* XCRemoteSwiftPackageReference "PinLayout" */,
+				8407625D27D31A8E0075CD5F /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 8407620F27D30A300075CD5F /* Products */;
 			projectDirPath = "";
@@ -219,9 +371,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8407629227D31ADB0075CD5F /* ModalTransition.swift in Sources */,
+				8407625827D31A220075CD5F /* RepositoriesListPresenter.swift in Sources */,
+				8407628227D31ADB0075CD5F /* UICollectionView+ClassIdentifiable.swift in Sources */,
+				8407629127D31ADB0075CD5F /* Router.swift in Sources */,
+				8407628C27D31ADB0075CD5F /* UIView+Extensions.swift in Sources */,
+				8407628927D31ADB0075CD5F /* Toast.swift in Sources */,
+				8407625C27D31A220075CD5F /* RepositoriesListView.swift in Sources */,
+				8407628D27D31ADB0075CD5F /* VIewController+Rx.swift in Sources */,
 				8407624F27D3167E0075CD5F /* RepositoryListTableViewCell.swift in Sources */,
-				8407624D27D316550075CD5F /* RepositoriesListView.swift in Sources */,
+				8407628827D31ADB0075CD5F /* String+Extensions.swift in Sources */,
+				8407629027D31ADB0075CD5F /* FadeAnimator.swift in Sources */,
+				8407628627D31ADB0075CD5F /* NSMutableAttributedString+Extensions.swift in Sources */,
+				8407628127D31ADB0075CD5F /* ClassIdentifiable.swift in Sources */,
+				8407625727D31A220075CD5F /* RepositoriesListFabric.swift in Sources */,
+				8407629427D31ADB0075CD5F /* Transition.swift in Sources */,
+				8407628B27D31ADB0075CD5F /* UIFont+Extensions.swift in Sources */,
+				8407625B27D31A220075CD5F /* RepositoriesListInteractor.swift in Sources */,
+				8407629327D31ADB0075CD5F /* PushTransition.swift in Sources */,
+				8407628A27D31ADB0075CD5F /* UIAlertController+Rx.swift in Sources */,
+				8407628F27D31ADB0075CD5F /* BackwardsPassableRouter.swift in Sources */,
+				8407628527D31ADB0075CD5F /* UIViewController+ErrorDescription.swift in Sources */,
+				8407628427D31ADB0075CD5F /* ErrorDescription.swift in Sources */,
+				8407625A27D31A220075CD5F /* RepositoriesListViewController.swift in Sources */,
+				8407629527D31ADB0075CD5F /* RxPresenter.swift in Sources */,
+				8407625927D31A220075CD5F /* RepositoriesListRouter.swift in Sources */,
+				8407628727D31ADB0075CD5F /* RxRelay+ObserverType.swift in Sources */,
 				8407621227D30A300075CD5F /* AppDelegate.swift in Sources */,
+				8407628E27D31ADB0075CD5F /* Animator.swift in Sources */,
+				8407628327D31ADB0075CD5F /* UITableView+ClassIdentifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +701,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		8407625D27D31A8E0075CD5F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -530,6 +716,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8407624427D30CF20075CD5F /* XCRemoteSwiftPackageReference "PinLayout" */;
 			productName = PinLayout;
+		};
+		8407625E27D31A8E0075CD5F /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8407625D27D31A8E0075CD5F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		8407626027D31A8E0075CD5F /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8407625D27D31A8E0075CD5F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		8407626227D31A8E0075CD5F /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8407625D27D31A8E0075CD5F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
