@@ -74,7 +74,9 @@ extension RepositoriesView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        tableView.dequeueReusableCell(withIdentifier: String(describing: RepositoryListTableViewCell.self), for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RepositoryListTableViewCell.self), for: indexPath) as! RepositoryListTableViewCell
+        cell.viewModel = list[indexPath.row]
+        return cell
     }
 }
 

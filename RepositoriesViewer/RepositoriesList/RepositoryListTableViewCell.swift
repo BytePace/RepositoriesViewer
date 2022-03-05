@@ -9,6 +9,13 @@ import Foundation
 import UIKit
 
 class RepositoryListTableViewCell: UITableViewCell {
+    var viewModel: RepositoryListViewProtocol! {
+        didSet {
+            titleLabel.text = viewModel.title
+            linkLabel.text = viewModel.link
+        }
+    }
+    
     let titleLabel: UILabel = {
         let label = UILabel()
 

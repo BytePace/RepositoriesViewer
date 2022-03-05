@@ -55,6 +55,24 @@ class RepositoriesViewTests: XCTestCase {
 
         XCTAssertNotNil(sut.tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? RepositoryListTableViewCell)
     }
+    
+    func test_viewWithArrayOfRepositories_firstCellHasTitleTextEqualToFirstRepositoryName() throws {
+        let sut = makeSUT()
+        
+        sut.list = [RepositoryListView(title: "rep", link: "rep url"), RepositoryListView(title: "rep2", link: "rep2 url")]
+
+        let cell = try XCTUnwrap(sut.tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? RepositoryListTableViewCell)
+        XCTAssertEqual(cell.titleLabel.text, "rep")
+    }
+    
+    func test_viewWithArrayOfRepositories_firstCellHasLinkLabelTextEqualToFirstRepositoryLink() throws {
+        let sut = makeSUT()
+        
+        sut.list = [RepositoryListView(title: "rep", link: "rep url"), RepositoryListView(title: "rep2", link: "rep2 url")]
+
+        let cell = try XCTUnwrap(sut.tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? RepositoryListTableViewCell)
+        XCTAssertEqual(cell.linkLabel.text, "rep url")
+    }
 
     private func makeSUT() -> RepositoriesView {
         let view = RepositoriesView()

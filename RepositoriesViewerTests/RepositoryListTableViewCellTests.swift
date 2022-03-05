@@ -39,6 +39,15 @@ class RepositoryListTableViewCellTests: XCTestCase {
         let calculatedSize = sut.sizeThatFits(.init(width: sut.frame.width, height: .greatestFiniteMagnitude))
         XCTAssertEqual(calculatedSize.height, sut.linkLabel.frame.maxY + 8)
     }
+    
+    func test_cellWithViewModel_displayesTitleAndLinkTextFromViewModel() {
+        let sut = makeSUT()
+        let vm = RepositoryListView(title: "Repo title", link: "Repo URL")
+        sut.viewModel = vm
+
+        XCTAssertEqual(sut.titleLabel.text, vm.title)
+        XCTAssertEqual(sut.linkLabel.text, vm.link)
+    }
 
     private func makeSUT() -> RepositoryListTableViewCell {
         let cell = RepositoryListTableViewCell()
